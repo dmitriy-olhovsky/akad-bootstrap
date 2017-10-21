@@ -1,0 +1,21 @@
+.ak-why {
+	padding-top: 150px;
+
+	&__item {
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+
+	&__title {
+		font-size: 18px;
+	}
+
+	&__list {
+		list-style: none;
+		padding-left: 0;
+		text-transform: uppercase;
+		font-size: 14px;
+		color: $color_light;
+		line-height: 30px;
+	}
+}

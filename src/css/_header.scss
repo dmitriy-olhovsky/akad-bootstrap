@@ -1,0 +1,64 @@
+.ak-header {
+	background: #fff url(../img/bg-header.jpg) top center no-repeat;
+	background-size: cover;
+	margin-bottom: 100px;
+
+	&__top {
+		height: 100px;
+	}
+
+	&__main {
+		padding-top: 125px;
+		padding-bottom: 125px;	
+	}
+
+	&__title {
+		text-transform: uppercase;
+		font-weight: 700;
+
+		span {
+			background-color: $color_green;	
+			display: inline-block;		
+			font-size: 18px;
+			line-height: 30px;
+			height: 30px;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+
+		h1 {
+			border: 10px solid $color_main;
+			padding: 20px 15px;  
+			margin-bottom: 30px;
+
+			@include media-breakpoint-up(lg) {
+				 padding: 20px 35px;
+			}
+		}
+	}
+
+	&__info {
+		padding-top: 25px;
+		padding-bottom: 80px;
+		position: relative;
+
+		.ak-button {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			transform: translateY(50%);
+		}
+	}
+
+	&__image {
+		position: relative;
+
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: auto;
+		}
+	}
+}
