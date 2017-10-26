@@ -3,6 +3,16 @@
 	background-size: cover;
 	margin-bottom: 100px;
 
+	&--page {
+		min-height: 500px;
+		background: #fff url(../img/header-page.jpg) top center no-repeat;
+		background-size: cover;	
+	}
+
+	&__middle {
+		min-height: 400px;
+	}
+
 	&__top {
 		height: 100px;
 	}
