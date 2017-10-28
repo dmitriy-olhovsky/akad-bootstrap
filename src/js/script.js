@@ -30,6 +30,12 @@
   			$(this).addClass('active');
 		});
 
+		$('#mobile-menu-link').on('click', function(evt) {
+			evt.preventDefault();
+			$(this).toggleClass('open');
+			$('#mobile-menu').toggleClass('ak-menu--open');
+		});
+
 	});
 
 })(jQuery);
