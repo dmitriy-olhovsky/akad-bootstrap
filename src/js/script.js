@@ -4,6 +4,12 @@
 // require bootstrap.min.js
 // require slick.min.js 
 
+// require popper-utils.min.js
+// require popper.min.js
+
+//=require util.js
+//=require tab.js
+
 //=require isotope.pkgd.min.js
 
 ;(function($){

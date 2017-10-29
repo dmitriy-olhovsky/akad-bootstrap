@@ -87,15 +87,23 @@
 	}
 }
 
-.ak-button {
+.ak-description {
 	display: inline-block;
 	background-color: $color_green;
 	border: 2px solid $color_green;
 	text-transform: uppercase;
 	color: #fff;
+	line-height: 26px;
+	height: 30px;
+	padding: 0 40px;
+}
+
+.ak-button {
+	@extend .ak-description;
+
 	line-height: 46px;
 	height: 50px;
-	padding: 0 40px;
+
 	transition: ease $transition;
 	transition-property: color, background-color;
 
@@ -161,7 +169,7 @@
 
 .dd-nav-icon span:nth-child(1) {
   top: 0;
-  width: 100%
+  width: 100%;
 }
 
 .dd-nav-icon span:nth-child(2),.dd-nav-icon span:nth-child(3) {
