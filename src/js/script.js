@@ -7,6 +7,8 @@
 // require popper-utils.min.js
 // require popper.min.js
 
+//=require lightbox.min.js
+
 //=require util.js
 //=require tab.js
 
@@ -34,6 +36,19 @@
 
   			$('.ak-portfolio__filter a').removeClass('active');
   			$(this).addClass('active');
+
+  			// Toggle lightbox filter
+  			$('.ak-portfolio__item a').each(function(){
+  				console.log($(this).data('lightbox'));
+  				if (filterValue == "*") {
+  					$(this).data('lightbox', 'portfolio');
+  				} else {
+					$(this).data('lightbox', $(this).data('filter'));
+  				}
+  			});
+			//window.lightbox.end();
+  			//window.lightbox.init();
+  			// lightbox.init();
 		});
 
 		$('#mobile-menu-link').on('click', function(evt) {

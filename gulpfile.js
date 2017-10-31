@@ -36,6 +36,7 @@ var paths= {
 		js: "src/**/*.js"
 	},
 	popper: './node_modules/popper.js/dist/',
+	lightbox: './node_modules/lightbox2/dist/js/',
 	bootstrap: './node_modules/bootstrap/js/dist/',
 	jquery: './node_modules/jquery/dist/',
 	isotope: './node_modules/isotope-layout/dist/'
@@ -85,7 +86,7 @@ gulp.task('js', function () {
 		.pipe(include({
 				extensions: "js",
 				hardFail: true,
-				includePaths: [paths.popper, paths.isotope, paths.bootstrap, paths.jquery, paths.src.js]
+				includePaths: [paths.lightbox, paths.isotope, paths.bootstrap, paths.jquery, paths.src.js]
 			}).on('error', notify.onError(
 					{
 						message: "<%= error.message %>",
